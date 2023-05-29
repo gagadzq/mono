@@ -1,0 +1,25 @@
+.my-container {
+  @apply flex flex-col items-center;
+  padding: 45px 10px !important;
+  font-size: 14px;
+}
+.my {
+  &-photo {
+    @apply rounded-half w-10 mb-1;
+  }
+  &-hello {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &-info {
+    @apply flex justify-around;
+    width: 100%;
+    border-top: 1px dashed #eee;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    &__item {
+      @apply flex flex-col text-center;
+    }
+  }
+}

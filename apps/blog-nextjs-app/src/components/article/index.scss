@@ -1,0 +1,47 @@
+.article-item {
+  padding: 10px;
+  border-bottom: 1px dashed #eee;
+  margin-bottom: 10px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      @apply text-yellow-light;
+    }
+  }
+
+  &__content {
+    @apply text-gray-60;
+    font-size: 13px;
+    margin: 15px 0 8px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  &__tools {
+    @apply text-gray-60;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    .tools-item {
+      display: inline-flex;
+      margin-right: 15px;
+      align-items: center;
+      i {
+        vertical-align: middle;
+      }
+      span {
+        margin-left: 2px;
+      }
+    }
+  }
+}
+.page-row {
+  margin: 20px 0;
+}

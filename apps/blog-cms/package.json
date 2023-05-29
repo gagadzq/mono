@@ -2,7 +2,46 @@
   "name": "@papa/cms",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@kangc/v-md-editor": "^2.3.15",
+    "animate.css": "^4.1.1",
+    "axios": "^1.2.6",
+    "crypto-js": "^4.1.1",
+    "element-plus": "^2.2.25",
+    "pinia": "^2.0.32",
+    "prismjs": "^1.29.0",
+    "vue": "^3.2.41",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@iconify-json/ep": "^1.1.8",
+    "@types/node": "^18.11.9",
+    "@types/prismjs": "^1.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "less": "^4.1.3",
+    "postcss": "^8.4.19",
+    "prettier": "^2.8.0",
+    "typescript": "^4.6.4",
+    "unplugin-auto-import": "^0.12.0",
+    "unplugin-icons": "^0.14.14",
+    "unplugin-vue-components": "^0.22.11",
+    "vite": "^3.2.3",
+    "vite-plugin-prismjs": "^0.0.8",
+    "vue-tsc": "^1.0.9"
   }
 }

@@ -1,0 +1,57 @@
+.header {
+  @apply flex bg-white text-black py-0 px-11 rounded-10 justify-between;
+  height: 60px;
+  box-shadow: 0px 0px 8px 0px #b3b3b3;
+  &-title {
+    @apply inline-flex items-center text-18 font-medium ml-2;
+    &__icon {
+      @apply w-3;
+    }
+    &__text {
+      @apply ml-1;
+    }
+  }
+  &-menu {
+    @apply flex;
+    position: relative;
+    &__item {
+      @apply w-9 text-12 justify-center relative inline-flex cursor-pointer;
+      &:hover {
+        @apply text-yellow-deep;
+      }
+      &--active::after {
+        @apply w-full absolute bg-yellow-deep bottom-0;
+        content: '';
+        height: 4px;
+      }
+    }
+    &__dropdown {
+      @apply bg-white;
+      position: absolute;
+      top: 50px;
+      box-shadow: 0px 0px 6px 1px #dddddd;
+      width: 80px;
+      border-radius: 4px;
+
+      &__item {
+        @apply text-black;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+
+        &--active::after {
+          @apply absolute bg-yellow-deep left-0 top-0;
+          content: '';
+          width: 4px;
+          height: 100%;
+          border-left: 2px solid;
+        }
+
+        &--active, &:hover {
+          @apply bg-gray-10 text-yellow-deep;
+        }
+      }
+    }
+  }
+}

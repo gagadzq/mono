@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'ipix';
+  src: url(../fonts/IPix.ttf);
+}
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 1px #d4d4d4;
+  padding: 10px;
+}
+.success-text {
+  color: #67C23A;
+}
